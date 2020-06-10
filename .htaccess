@@ -1,0 +1,8 @@
+RewriteEngine on
+RewriteCond $1 !^(index.php|images|resource|robots.txt)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ ./index.php/$1 [L,QSA]
+
+php_value max_execution_time 900000
+php_value memory_limit 9000000M

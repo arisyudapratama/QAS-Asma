@@ -1,0 +1,4 @@
+Ganti metode
+
+Controller : Tfidf, Bobot_query
+View : HasilView
